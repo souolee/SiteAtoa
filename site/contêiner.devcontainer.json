@@ -1,0 +1,14 @@
+{
+    "name": "Node.js",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+        "args": {
+            "VARIANT": "14"
+        }
+    },
+    "runArgs": [
+        "-v", "/var/run/docker.sock:/var/run/docker.sock"
+    ],
+    "extensions": ["ms-vscode.vscode-node-essentials"]
+}
